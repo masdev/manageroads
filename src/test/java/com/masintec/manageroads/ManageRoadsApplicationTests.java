@@ -1,0 +1,13 @@
+package com.masintec.manageroads;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class ManageRoadsApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
