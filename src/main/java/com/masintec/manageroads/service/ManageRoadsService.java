@@ -9,6 +9,9 @@ import com.masintec.manageroads.model.Intersection;
 import com.masintec.manageroads.model.Road;
 import com.masintec.manageroads.model.Sign;
 
+import jakarta.transaction.Transactional;
+
+@Transactional
 public interface ManageRoadsService {
 	public List<Road> getAllRoads();
 	public Road getRoad(Long id) throws DataNotFoundException ;
