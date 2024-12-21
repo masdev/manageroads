@@ -60,4 +60,16 @@ public class SignController {
 	public void deleteSign(@PathVariable Long id) throws DataNotFoundException {
 		sService.deleteSign(id);
 	}
+	
+//	@PostMapping (path = "/roadsign", consumes = {MediaType.APPLICATION_JSON_VALUE}, produces = {MediaType.APPLICATION_JSON_VALUE})
+//	public void bindRoadSign(@RequestBody ObjectNode objectNode) throws DataNotFoundException {
+//		ObjectMapper mapper = new ObjectMapper();
+//		JsonNode signJson = objectNode.findPath("sign");
+//		JsonNode roadJson = objectNode.findPath("road");
+//
+//		Sign sign = mapper.convertValue(signJson, Sign.class);
+//		Road road = mapper.convertValue(roadJson, Road.class);
+//
+//		mrService.updateCreateRoadSignBind(road, sign);
+//	}
 }

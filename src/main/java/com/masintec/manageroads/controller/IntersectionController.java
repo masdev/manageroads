@@ -80,4 +80,22 @@ public class IntersectionController {
 			throws DataNotFoundException {
 		iService.deleteIntersectionRoadBind(intersectionId, roadId);
 	}
+	
+	
+//	@PostMapping (path = "/intersectionroad", consumes = {MediaType.APPLICATION_JSON_VALUE}, produces = {MediaType.APPLICATION_JSON_VALUE})
+//	public void bindIntersectionRoad(@RequestBody ObjectNode objectNode) throws DataNotFoundException, JsonMappingException, JsonProcessingException {
+//		ObjectMapper mapper = new ObjectMapper();
+//		JsonNode intersectionJson = objectNode.findPath("intersection");
+//		Intersection intersection = mapper.convertValue(intersectionJson, Intersection.class);
+//
+//		JsonNode roadsNode = objectNode.findPath("roads");
+//		ArrayNode arrayNode = mapper.createArrayNode();
+//
+//		// fill arrayNode with values from roadsNode
+//		roadsNode.elements().forEachRemaining(arrayNode::add);
+//
+//		Set<Road> roads = mapper.convertValue(arrayNode, mapper.getTypeFactory().constructCollectionType(Set.class, Road.class));
+//
+//		mrService.updateCreateIntersectionRoadBind(intersection, roads);
+//	}
 }
